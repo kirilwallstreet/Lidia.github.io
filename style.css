@@ -293,26 +293,23 @@ body {
   content: '';
   position: absolute;
   background-color: #4475F2;
+  transform-origin: left bottom;
+  height: 150%;
   box-shadow: 0 30px 60px 0 rgba(71,74,87,.25);
+  width: 100vw;
+  border-radius: 50px;
+ 
+  bottom: 0;
 }
 .hero__container::before{
   left: calc(50% + 30px);
-  bottom: 0;
-  width: 100vw;
-  height: 150%;
-  border-radius: 50px;
   transform: skewX(-20deg);
-  transform-origin: left bottom;
- 
-  box-shadow: 0 30px 60px 0 rgba(71,74,87,.25);
 }
 
 .hero__container::after{
- transform-origin: left top;
- transform: skewX(20deg) scaleY(.9);
- border-radius: 50px;
- right: 50%
- ;
+  left: calc(50% + 440px);
+ transform: skewX(31deg) ;
+
 }
 .hero__content {
     flex: 0 1 50%;
