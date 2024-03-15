@@ -1,0 +1,55 @@
+.header {
+	/* ...existing styles... */
+	background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+	backdrop-filter: blur(5px); /* Blur effect (not supported in Firefox) */
+		/* ...existing styles... */
+	position: -webkit-sticky; /* For Safari */
+	position: sticky;
+	top: 0;
+	z-index: 999; /* To ensure it appears above other elements when scrolling */
+		/* ...existing styles... */
+	padding-bottom: 10px;
+
+  }
+
+ 
+  
+  .header:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	backdrop-filter: blur(5px);
+	pointer-events: none; /* Ignore pointer events to allow clicks through to the content underneath */
+	-webkit-mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+			mask: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+  }
+  
+  /* Add media query for max-width: 479.98px */
+  @media (max-width: 479.98px) {
+	.header {
+	  background-color: transparent; /* Reset the header background color */
+	  /* ...existing media query styles... */
+	}
+  
+	.header:before {
+	  background-color: rgba(255, 255, 255, 0.85); /* Set the background color of a pseudo-element for the frosted glass effect */
+	}
+  }
+	@media (min-width: 479.98px){
+	.header {
+		background-color: rgba(255, 255, 255, 0);
+
+	}
+  }
+
+
+  .header.header--fixed {
+	position: fixed;
+	width: 100%;
+	left: 0;
+  }
+  /* ja sdelal*/
