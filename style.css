@@ -338,10 +338,17 @@ body {
 }
 
 @media (min-witdh:1200px) {
-	.content-hero{padding-right: 20px;
+	.hero__content {padding-right: 20px;
 
 	}
 }
+
+@media (max-width: 480px) {
+	.content__hero__button {
+	  width: 100%;
+	  text-align: center;
+	}
+  }
 .content__title {
     font-size: 76px;
     font-weight: 800;
@@ -349,6 +356,15 @@ body {
     letter-spacing: -4px;
     line-height: 117% ;
 }
+@media  (max-width: 467.97px){
+	.content__title{font-size: 45px;}
+
+}
+
+.btn--primary {
+
+}
+/*-------------------------------*/
 
 .content__title a {
     color: #4475F2;
@@ -372,6 +388,7 @@ body {
     margin-bottom: 10px;    
 }
 .content__hero__button {
+	text-align: center;
     display: inline-block;
     box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.25);
     border-radius: 10px 10px 10px 10px;
@@ -383,15 +400,14 @@ body {
     position: relative;
     top: 0;
     transition: all 0.3s;
+
 }
 
 .content__hero__button:hover{
 	top: 3px;
 	box-shadow: 0 30px 60px 0 rgb(51, 133, 209);
 }
-.hero__images {
-  flex: 0 1 50%;
-}
+
 .images-hero {
 	z-index: 2;
 	display: grid;
@@ -400,8 +416,7 @@ body {
 	gap: 27px;
 
 }
-.images-hero__item {
-}
+
 .images-hero__image {
 	border-radius: 10px;
 	max-width: 100%;
@@ -427,4 +442,12 @@ body {
 .images-hero__item4 {
 	align-self: end;
 	justify-self: end;
+}
+
+
+@media  (max-width: 1200px){
+	.images-hero__image{
+		align-self: center;
+	}
+
 }
