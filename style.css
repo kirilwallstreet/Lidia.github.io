@@ -261,7 +261,7 @@ body {
 	.content-hero {
 		justify-items: start;
 	}
-}
+  }
 .content__title {
 	font-size: 76px;
 	font-weight: 800;
@@ -323,8 +323,7 @@ body {
 	grid-template-rows: repeat(2, 1fr);
 	gap: 27px;
 }
-.images-hero__item {
-}
+
 .images-hero__image {
 	border-radius: 10px;
 	max-width: 100%;
