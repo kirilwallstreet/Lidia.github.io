@@ -79,6 +79,8 @@ body {
 	}
 }
 
+
+
 /* Components */
 .header-block {
 	font-weight: 800;
@@ -87,7 +89,7 @@ body {
 	margin-bottom: 90px;
 }
 .header-block__label {
-	text-transform: uppercase;
+	
 	color: #4475f2;
 	letter-spacing: 2px;
 	font-size: 18px;
@@ -166,6 +168,7 @@ body {
 	row-gap: 13px;
 	flex-wrap: wrap;
 	align-items: center;
+	list-style: none;
 }
 .menu__item {
 }
@@ -653,3 +656,31 @@ body {
 		margin-bottom: 30px;
 	}
 }
+a{
+	text-transform:none
+}
+
+
+/* Add to your existing CSS */
+
+.features__icon {
+	align-self: center;
+	justify-self: center;
+	place-self: center;
+  }
+  
+  .header-block__label {
+	/* text-shadow: 0 0 1px #fff; */
+  }
+
+  .header-block__label {
+	/* remove this line */ text-shadow: 0 0 1px #fff;
+  }
+
+
+  .features__icon {
+	/* add these lines */
+	align-self: center;
+	justify-self: center;
+	place-self: center;
+  }
